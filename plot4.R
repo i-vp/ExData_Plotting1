@@ -13,7 +13,7 @@ with(sub, plot(Time, Voltage, xlab="datetime", type="l"))
 with(sub, plot(Time, Sub_metering_1, ylab="Energy sub metering", xlab = "", type = "l", col="black"))
     with(sub, lines(Time, Sub_metering_2, col="red"))
     with(sub, lines(Time, Sub_metering_3, col="blue"))
-    legend("topright", lty=1, col = c("black", "red", "blue"), legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), bty="n")
+    legend("topright", lty=1, col = c("black", "red", "blue"), legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), bty="n", cex=0.9)
 with(sub, plot(Time, Global_reactive_power, xlab="datetime", type="l"))
 
 dev.off()
